@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table, th {
+  font-size: 100px;
+  border: none;
+}
+.protected {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none;    /* Firefox */
+            -ms-user-select: none;     /* IE 10+ */
+            user-select: none;         /* Standard syntax */
+        }
+</style>
+<body class="protected">
+
+<h1>Remote Tic Tac Toe</h1>
+<p>Spectating, {{ turn }}'s turn now</p>
+<h1>{{ winner }}</h1>
+
+<table>
+  <tr>
+    <th id="tile1">{{ tile1 }}</th>
+    <th id="tile2">{{ tile2 }}</th>
+    <th id="tile3">{{ tile3 }}</th>
+  </tr>
+  <tr>
+    <th id="tile4">{{ tile4 }}</th>
+    <th id="tile5">{{ tile5 }}</th>
+    <th id="tile6">{{ tile6 }}</th>
+  </tr>
+  <tr>
+    <th id="tile7">{{ tile7 }}</th>
+    <th id="tile8">{{ tile8 }}</th>
+    <th id="tile9">{{ tile9 }}</th>
+  </tr>
+</table>
+
+<br><br>
+
+<script>
+    setTimeout(function() {
+            window.location.href = '?';
+     }, 750);
+</script>
+<script>
+    // Disable right-click
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+</script>
+
+</body>
+</html>
+

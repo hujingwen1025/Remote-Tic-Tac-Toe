@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.protected {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none;    /* Firefox */
+            -ms-user-select: none;     /* IE 10+ */
+            user-select: none;         /* Standard syntax */
+        }
+</style>
+<body class="protected">
+
+<h1>Remote Tic Tac Toe</h1>
+<hr>
+<h2><a href="/x">Play as X</a></h2>
+<h2><a href="/o">Play as O</a></h2>
+<h2><a href="/spectator">Spectate</a></h2>
+<script>
+    // Disable right-click
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+</script>
+
+</body>
+</html>
+
